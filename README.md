@@ -1,4 +1,4 @@
-# dodo-open-net
+# dodo-open-eyy
 
 DoDo开放平台官方 易语言 SDK
 
