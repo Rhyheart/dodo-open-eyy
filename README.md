@@ -18,6 +18,6 @@
       alt="release">
   </a>
 
-  <a href="https://open.imdodo.com/sdk/eyy" target="_blank">SDK 文档</a>
+  [SDK 文档](https://open.imdodo.com/sdk/eyy)
 
 </div>
