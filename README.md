@@ -10,7 +10,7 @@
 
   _✨ 基于最新 易语言 开发，中文编程极大的降低了开发门槛。 ✨_
 
-  <a href="https://github.com/Rhyheart/dodo-open-eyy/blob/main/LICENSE">
+  <a href="https://github.com/dodo-open/dodo-open-eyy/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/dodo-open/dodo-open-eyy" alt="license">
   </a>
   <a href="https://github.com/dodo-open/dodo-open-eyy/releases">
