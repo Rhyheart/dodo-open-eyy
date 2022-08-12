@@ -60,6 +60,7 @@
 openApiOptions.BaseApi ＝ “接口地址”
 openApiOptions.ClientId ＝ “机器人唯一标识”
 openApiOptions.Token ＝ “机器人鉴权Token”
+openApiOptions.Log ＝ 到整数 (&Log)
 
 ' 接口服务
 openApiService.Init (openApiOptions)
@@ -79,6 +80,13 @@ openEventService.ReceiveAsync ()
 
 返回 (0)
 
+
+.子程序 Log
+.参数 message, 文本型
+
+
+标准输出 (#标准输出设备, message ＋ #换行符 ＋ #换行符)
+
 ```
 
 ## 核心代码
@@ -95,6 +103,6 @@ openEventService.ReceiveAsync ()
 
 此基类封装了事件相关处理逻辑，用户只需要创建自己的处理类（例如：[DemoEventProcessService](https://github.com/dodo-open/dodo-open-eyy/blob/main/src/dodo.open.sdk.e)）并继承此基类，即可自定义处理逻辑
 
-继承后，需要重写Connected、Disconnected、Reconnected、Exception核心方法，其他事件方法可以选择性重写！
+继承后，需要重写Connected、Disconnected、Reconnected、Exception核心方法，除了ReceivedInternal的其他事件方法可以选择性重写！
 
 **注意：ReceivedInternal请勿重写，否则其他事件方法将全部失效！**
